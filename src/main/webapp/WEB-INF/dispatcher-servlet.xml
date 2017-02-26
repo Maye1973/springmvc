@@ -17,5 +17,7 @@
     <context:component-scan base-package="com.mamlong.springmvc">
         <context:include-filter type="annotation" expression="org.springframework.web.bind.annotation.RestController"/>
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <!-- 不扫面service注解，不然会影响spring事务-->
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
     </context:component-scan>
 </beans>
