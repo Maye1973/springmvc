@@ -11,7 +11,6 @@
  		http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <!-- 启动注解，注册服务，如验证框架、全局类型转换器 -->
-    <mvc:annotation-driven />
     <context:annotation-config />
     <!-- 扫描这个包下的非@Controller和@RestController标记的类 -->
     <context:component-scan base-package="com.mamlong.springmvc">
