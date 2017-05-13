@@ -24,8 +24,8 @@ import java.time.LocalDateTime;
 @Service(value = "swaggerService")
 public class SwaggerServiceImpl implements ISwaggerService{
 
-//    @Autowired
-//    private IDemoService demoService;
+    @Autowired
+    private IDemoService demoService;
 
     @Override
     public long currentTime() {
